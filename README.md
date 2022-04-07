@@ -1,11 +1,27 @@
-# ds-project-template
+# My First EDA Project : Investing in the King County Housing Market
 
-Template for creating ds simple projects
+In this repository we will have a look at the King County House Price Data from May 2014 - May 2015.
+Our stakeholder is interested in buying und selling houses for the highest possible profit. Therefore things as social responsibility or a sustainable urban development are counterproductive. Her mantra: 'If I don't do it, someone else will.'.
+To match her interest in the housing market we need to provide data where to find cheap objects with high profit margins.
 
-## Requirements
+## The data
+You can find the data here:
+https://geodacenter.github.io/data-and-lab/KingCounty-HouseSales2015/
 
-- pyenv
-- python==3.9.8
+## Virtual Environment
+
+This repo contains a requirements.txt file with a list of all the packages and dependencies you will need. Before you install the virtual environment, make sure to install postgresql if you haven't done it before.
+
+brew update
+brew install postgresql
+In order to install the environment you can use the following commands:
+
+pyenv local 3.9.8
+python -m venv .venv
+source .venv/bin/activate
+pip install --upgrade pip
+pip install -r requirements.txt
+
 
 ## Setup
 
@@ -17,20 +33,3 @@ One of the first steps when starting any data science project is to create a vir
 * upgrading `pip` (This step is not absolutely necessary, but will save you trouble when installing some packages.)
 * installing the required packages via `pip`
 
-At the end, you want to make sure that people who are interested in your project can create an identical environment on their own computer in order to be able to run your code without running into errors. Therefore you can create a `requirements file` and add it to your repository. You can create such a file by running the following command: 
-
-```bash
-pip freeze > requirements.txt
-```
-
-*Note: In rare case such a requirements file created with `pip freeze` might not ensure that another (especially M1 chip) user can install and execute it properly. This can happen if libraries need to be compiled (e.g. SciPy). Then it also depends on environment variables and the actual system libraries.*
-
-### Unit testing (Optional)
-
-If you write python scripts for your data processing methods, you can also write unit tests. In order to run the tests execute in terminal:
-
-```bash
-pytest
-```
-
-This command will execute all the functions in your project that start with the word **test**.
