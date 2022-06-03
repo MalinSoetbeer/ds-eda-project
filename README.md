@@ -1,7 +1,7 @@
 # My First EDA Project : Investing in the King County Housing Market
 
 In this repository we will have a look at the King County House Price Data from May 2014 - May 2015.
-Our stakeholder is interested in buying und selling houses for the highest possible profit. Therefore things as social responsibility or a sustainable urban development are counterproductive. Her mantra: 'If I don't do it, someone else will.'.
+Our stakeholder is interested in buying und selling houses for the highest possible profit.
 To match her interest in the housing market we need to provide data where to find cheap objects with high profit margins.
 
 ## The data
